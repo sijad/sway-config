@@ -2,12 +2,15 @@
 # Variables
 ################
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
 # Keyboard input name
 keyboard_input_name="1:1:AT_Translated_Set_2_keyboard"
 
 # Date and time
 date_and_week=$(date "+%Y/%m/%d")
 current_time=$(date "+%H:%M")
+jalali_date=$($DIR/jalali)
 
 #############
 # Commands
@@ -49,4 +52,4 @@ else
     audio_active='🔊'
 fi
 
-echo "⌨ $language | $audio_active $audio_volume | $battery_pluggedin $battery_charge | 🕘 $date_and_week $current_time"
+echo "⌨ $language | $audio_active $audio_volume | $battery_pluggedin $battery_charge | 🕘 $date_and_week $current_time | $jalali_date"
