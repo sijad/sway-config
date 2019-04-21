@@ -1,0 +1,1 @@
+# exec redshift -l 25:25 -r -t 5500:4200
