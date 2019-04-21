@@ -70,7 +70,7 @@ smart_borders on
     bindsym $mod+Return exec ~/.config/sway/scripts/open_terminal.sh
 
     # kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # start your launcher
     bindsym $mod+d exec $menu
