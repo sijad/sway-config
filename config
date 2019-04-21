@@ -24,8 +24,9 @@ set $menu rofi -theme /usr/share/rofi/themes/Monokai.rasi -show run -run-command
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg ~/wallpaper.jpg fill
 
-default_border pixel 3
-smart_borders on
+default_border none
+gaps inner 3
+smart_gaps on
 
 #
 # Example configuration:
