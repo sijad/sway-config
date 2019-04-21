@@ -1,7 +1,7 @@
 input "1:1:AT_Translated_Set_2_keyboard" {
   xkb_layout us,ir
   xkb_variant ,pes_modified
-  xkb_options grp:alt_shift_toggle
+  xkb_options grp:caps_toggle
   repeat_delay 150
   repeat_rate 20
 }
