@@ -23,7 +23,6 @@ set $menu rofi -theme /usr/share/rofi/themes/Monokai.rasi -show run -run-command
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg ~/wallpaper.jpg fill
-output eDP1 resolution 1664x936
 
 default_border none
 
@@ -202,8 +201,8 @@ bindsym $mod+r mode "resize"
 
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Shades-of-gray'
-    gsettings set $gnome-schema icon-theme 'Ultra-Flat' 
+    gsettings set org.gnome.desktop.interface gtk-theme 'Arc-Darker'
+    gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 }
 
 include ~/.config/sway/config.d/*
