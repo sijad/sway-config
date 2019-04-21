@@ -1,3 +1,7 @@
+bindsym $mod+F1 exec pactl set-sink-mute `pactl list sinks short | grep RUNNING | awk '{print $1}'` toggle
+bindsym $mod+F2 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'` -2%
+bindsym $mod+F3 exec pactl set-sink-volume `pactl list sinks short | grep RUNNING | awk '{print $1}'` +2%
+
 bindsym $mod+F5 exec light -U 5
 bindsym $mod+F6 exec light -A 5
 
