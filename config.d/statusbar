@@ -1,0 +1,10 @@
+bar {
+    position top
+    status_command while ~/.config/sway/scripts/sway_bar.sh; do sleep 1; done
+
+    colors {
+        statusline #ffffff
+        background #000000DD
+        inactive_workspace #323232AA #323232AA #5c5c5cAA
+    }
+}

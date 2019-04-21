@@ -1,0 +1,4 @@
+bindsym $mod+F5 exec light -U 5
+bindsym $mod+F6 exec light -A 5
+
+bindsym $mod+Shift+S exec grim ~/Pictures/$(date '+%Y-%m-%d-%T')-screenshot.png
