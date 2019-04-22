@@ -22,7 +22,7 @@ set $menu rofi -theme /usr/share/rofi/themes/Monokai.rasi -show run -run-command
 default_border none
 gaps inner 3
 smart_gaps on
-font pango:Vazir Code Hack 11
+font pango:Vazir Code Hack 10
 
 ### Idle configuration
 #
