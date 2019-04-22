@@ -7,4 +7,4 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume `pactl list sinks short 
 bindsym XF86MonBrightnessDown exec light -U 5
 bindsym XF86MonBrightnessUp exec light -A 5
 
-bindsym Print exec grim ~/Pictures/$(date '+%Y-%m-%d-%T')-screenshot.png
+bindsym Print exec slurp | grim -g - ~/Pictures/$(date '+%Y-%m-%d-%T')-screenshot.png
