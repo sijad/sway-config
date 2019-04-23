@@ -7,8 +7,10 @@
 # exit on error
 set -e
 
-# for systemd or cron
-export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
+# set $SWAYSOCK if it's not set (for systemd or cron)
+if [ -z "$SWAYSOCK" ]; then
+  export SWAYSOCK=/run/user/$(id -u)/sway-ipc.$(id -u).$(pgrep -x sway).sock
+fi
 
 wlpath=${WALLPAPER_PATH:-"$HOME/wallpaper.jpg"}
 output=${WALLPAPER_OUTPUT:-"*"}
