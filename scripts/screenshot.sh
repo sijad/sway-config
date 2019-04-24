@@ -1,4 +1,4 @@
-!@/bin/env bash
+#!/bin/sh
 
 SC_FILE=$HOME/Pictures/$(date '+%Y-%m-%d-%T')-screenshot.png
 slurp | grim -g - $SC_FILE

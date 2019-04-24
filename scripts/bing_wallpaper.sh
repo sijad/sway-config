@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/bin/sh
 
 # systemd example: https://stackoverflow.com/a/50321912
 # cron example:
